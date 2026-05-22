@@ -1,0 +1,126 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header-principal {
+    background-color: #1f2d3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-principal h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* Container de Conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Layout em Colunas (Responsivo: 3 colunas em telas grandes, 1 em telas pequenas) */
+.grid-atrativos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Cards dos Atrativos */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Título de cada coluna usando h2 como pedido pelas dicas */
+.card h2 {
+    font-size: 1.2rem;
+    background-color: #eee;
+    padding: 12px;
+    text-align: center;
+    color: #444;
+}
+
+/* Imagens dos Atrativos */
+.img-atrativo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease; /* Transição suave para o efeito */
+}
+
+/* Efeito w3-hover-opacity feito nativamente no CSS */
+.img-atrativo:hover {
+    opacity: 0.6; /* Deixa a imagem com opacidade ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Conteúdo interno do Card */
+.card-conteudo {
+    padding: 20px;
+}
+
+.card-conteudo h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #1f2d3d;
+}
+
+.descricao {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    height: 80px; /* Alinha o tamanho dos textos */
+    overflow: hidden;
+}
+
+.referencia {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Link/Botão do Site */
+.btn-site {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: lowercase; /* Mantém escrito "site" como no exemplo */
+    border: 1px solid #0066cc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.btn-site:hover {
+    background-color: #0066cc;
+    color: #ffffff;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #1f2d3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
