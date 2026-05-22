@@ -3,134 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título na aba da página exatamente como solicitado -->
     <title>Atrativos Turísticos - SÃO PAULO</title>
-    <!-- Link do W3.CSS para estilização, colunas e animações -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            font-family: Arial, sans-serif;
-        }
-        .atrativo-card {
-            background: white;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        .atrativo-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 4px;
-        }
-        .btn-site {
-            display: inline-block;
-            margin-top: 10px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-        }
-        .btn-site:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
-    <!-- Cabeçalho Principal -->
-    <header class="w3-container w3-teal w3-center w3-padding-32">
+    <header class="header-principal">
         <h1>Atrativos Turísticos de São Paulo</h1>
         <p>Conheça os principais pontos culturais e históricos da metrópole</p>
     </header>
 
-    <!-- Corpo da Página / Grid de Colunas -->
-    <main class="w3-content w3-padding-32" style="max-width:1200px">
+    <main class="container">
         
-        <!-- Primeira Linha de Colunas (3 atrativos) -->
-        <div class="w3-row-padding">
+        <div class="grid-atrativos">
             
-            <!-- MASP -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>MASP</h2>
-                    <img src="masp.png" alt="Museu de Arte de São Paulo" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Acervo Oficial / Referência</p>
-                    <p>O Museu de Arte de São Paulo Assis Chateaubriand é um dos centros culturais mais importantes do país, famoso por sua arquitetura com vão livre projetada por Lina Bo Bardi.</p>
-                    <a href="https://www.bilheteria.masp.org.br/pt-BR/tickets/masp-exposicoes" target="_blank" class="btn-site">Visitar Site</a>
+            <section class="card">
+                <h2>Lugar Turístico - MASP</h2>
+                <img src="masp.png" alt="MASP" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>MASP</h3>
+                    <p class="descricao">O Museu de Arte de São Paulo Assis Chateaubriand é um dos centros culturais mais importantes do país, famoso por seu vão livre projetado por Lina Bo Bardi.</p>
+                    <p class="referencia">Foto: Acervo Oficial / Referência</p>
+                    <a href="https://www.bilheteria.masp.org.br/pt-BR/tickets/masp-exposicoes" target="_blank" class="btn-site">site</a>
                 </div>
-            </div>
+            </section>
 
-            <!-- Avenida Paulista -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>Avenida Paulista</h2>
-                    <img src="paulista.png" alt="Avenida Paulista" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Melhores Destinos</p>
-                    <p>O coração financeiro e cultural da cidade. Aos domingos, fica aberta exclusivamente para pedestres, ciclistas e manifestações artísticas.</p>
-                    <a href="https://www.melhoresdestinos.com.br/avenida-paulista.html" target="_blank" class="btn-site">Visitar Site</a>
+            <section class="card">
+                <h2>Lugar Turístico - Avenida Paulista</h2>
+                <img src="paulista.png" alt="Avenida Paulista" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>Avenida Paulista</h3>
+                    <p class="descricao">O coração financeiro e cultural da cidade. Aos domingos, fica aberta exclusivamente para pedestres, ciclistas e manifestações artísticas.</p>
+                    <p class="referencia">Foto: Melhores Destinos</p>
+                    <a href="https://www.melhoresdestinos.com.br/avenida-paulista.html" target="_blank" class="btn-site">site</a>
                 </div>
-            </div>
+            </section>
 
-            <!-- Parque do Ibirapuera -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>Parque Ibirapuera</h2>
-                    <img src="ibirapuera.png" alt="Parque do Ibirapuera" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Parque do Ibirapuera Org</p>
-                    <p>O parque urbano mais famoso de São Paulo, repleto de áreas verdes, ciclovias, museus projetados por Oscar Niemeyer e lagos artificiais.</p>
-                    <a href="https://www.parquedoibirapuera.org/" target="_blank" class="btn-site">Visitar Site</a>
+            <section class="card">
+                <h2>Lugar Turístico - Ibirapuera</h2>
+                <img src="ibirapuera.png" alt="Parque do Ibirapuera" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>Parque Ibirapuera</h3>
+                    <p class="descricao">O parque urbano mais famoso de São Paulo, repleto de áreas verdes, museus projetados por Oscar Niemeyer e lagos artificiais.</p>
+                    <p class="referencia">Foto: Parque do Ibirapuera Org</p>
+                    <a href="https://www.parquedoibirapuera.org/" target="_blank" class="btn-site">site</a>
                 </div>
-            </div>
+            </section>
+
+            <section class="card">
+                <h2>Lugar Turístico - Catedral da Sé</h2>
+                <img src="catedral.png" alt="Catedral da Sé" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>Catedral da Sé</h3>
+                    <p class="descricao">Um dos maiores monumentos neogóticos do mundo. Localizada no marco zero da capital, impressiona pela imponência de suas torres.</p>
+                    <p class="referencia">Foto: Catedral da Sé Oficial</p>
+                    <a href="https://catedraldasesp.com/" target="_blank" class="btn-site">site</a>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Lugar Turístico - Teatro Municipal</h2>
+                <img src="teatro.png" alt="Theatro Municipal" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>Theatro Municipal</h3>
+                    <p class="descricao">Inspirado na Ópera de Paris, o teatro é um marco arquitetônico e foi o grande palco da Semana de Arte Moderna de 1922.</p>
+                    <p class="referencia">Foto: Theatro Municipal SP</p>
+                    <a href="https://theatromunicipal.org.br/" target="_blank" class="btn-site">site</a>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Lugar Turístico - Pinacoteca</h2>
+                <img src="pinacoteca.png" alt="Pinacoteca" class="img-atrativo">
+                <div class="card-conteudo">
+                    <h3>Pinacoteca</h3>
+                    <p class="descricao">O museu de artes visuais mais antigo de São Paulo, focado na produção brasileira desde o século XIX até a contemporaneidade.</p>
+                    <p class="referencia">Foto: Pinacoteca Oficial</p>
+                    <a href="https://pinacoteca.org.br/" target="_blank" class="btn-site">site</a>
+                </div>
+            </section>
 
         </div>
-
-        <!-- Segunda Linha de Colunas (3 atrativos) -->
-        <div class="w3-row-padding w3-margin-top">
-            
-            <!-- Catedral da Sé -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>Catedral da Sé</h2>
-                    <img src="catedral.png" alt="Catedral da Sé" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Catedral da Sé Oficial</p>
-                    <p>Um dos maiores monumentos neogóticos do mundo. Localizada no marco zero da capital, impressiona pela imponência de suas torres e cripta subterrânea.</p>
-                    <a href="https://catedraldasesp.com/" target="_blank" class="btn-site">Visitar Site</a>
-                </div>
-            </div>
-
-            <!-- Theatro Municipal -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>Theatro Municipal</h2>
-                    <img src="teatro.png" alt="Theatro Municipal de São Paulo" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Theatro Municipal SP</p>
-                    <p>Inspirado na Ópera de Paris, o teatro é um dos marcos arquitetônicos da cidade e foi o grande palco da Semana de Arte Moderna de 1922.</p>
-                    <a href="https://theatromunicipal.org.br/" target="_blank" class="btn-site">Visitar Site</a>
-                </div>
-            </div>
-
-            <!-- Pinacoteca -->
-            <div class="w3-third">
-                <div class="atrativo-card">
-                    <h2>Pinacoteca</h2>
-                    <img src="pinacoteca.png" alt="Pinacoteca de São Paulo" class="atrativo-img w3-hover-opacity">
-                    <p class="w3-small w3-text-grey">Fonte da foto: Pinacoteca Oficial</p>
-                    <p>O museu de artes visuais mais antigo de São Paulo, focado na produção brasileira desde o século XIX até a contemporaneidade, cercado pelo Parque da Luz.</p>
-                    <a href="https://pinacoteca.org.br/" target="_blank" class="btn-site">Visitar Site</a>
-                </div>
-            </div>
-
-        </div>
-
     </main>
 
-    <!-- Rodapé -->
-    <footer class="w3-container w3-dark-grey w3-center w3-padding-16">
-        <p>Atividade Prática - Turismo Local</p>
+    <footer class="rodape">
+        <p>Atividade Prática - Turismo Local © São Paulo</p>
     </footer>
 
 </body>
